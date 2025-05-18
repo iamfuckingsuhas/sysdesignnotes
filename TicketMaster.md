@@ -112,7 +112,7 @@ reads >>> writes - cache in event, venue, performer.
 event, venue and performer can be stored in DDB 
 ticket needs ACID - mySQL 
 
-![[https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/ticketmaster.png]]
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/ticketmaster.png)
 
 
 redlock - quorum approach - n/2+1 nodes need to ACK for lock to be acquired.
