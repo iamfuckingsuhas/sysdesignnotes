@@ -6,12 +6,13 @@
 
 1. Functional Requirement
 2. Non Functional Requirements
-3. Core Entities
-4. APIs
-5. basic HLD
-6. Deep dive
-7. Optimisations
-8. Monitoring, Logging and Fault Tolerance
+3. Estimates 
+4. Core Entities
+5. APIs
+6. basic HLD
+7. Deep dive
+8. Optimisations
+9. Monitoring, Logging and Fault Tolerance
 
 
 
