@@ -28,4 +28,6 @@
    4. PATCH /ride/confirm -> {driverId, rideId, status} -> accept/decline
    5. PATCH /ride -> {driverId, rideId, status} -> ride completed, at pickup location, in progress
 5. High Level Design - simple, satisfy all FR
-6. Optimise and Deepdive - satisfy all NRF.
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/basicHldUber.png)
+
+7. Optimise and Deepdive - satisfy all NRF.
