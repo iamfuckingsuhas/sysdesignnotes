@@ -12,3 +12,10 @@
 6. Deep dive
 7. Optimisations
 8. Monitoring, Logging and Fault Tolerance
+
+
+
+API Gateway does - 
+- Authentication
+- Routing
+- Rate Limiting
