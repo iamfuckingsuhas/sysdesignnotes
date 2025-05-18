@@ -43,6 +43,6 @@ spark wont work as we need as real time as possible, we use streams with flink/s
 aggregation window - period in which data is aggregated, count reset after this
 flush intervals - intervals in which intermediary results are flushed from the system.
 
-
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adclickaggregatorsecond.png)
 
 
