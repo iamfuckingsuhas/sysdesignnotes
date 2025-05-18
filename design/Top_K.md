@@ -17,6 +17,10 @@
 
    break problem into counting and topK to simplify flow
 
+   to get topK, we maintain hashmap counter, hashmap -> heap index, heap of size k
+   if current video is inside heap, we increment counter and reheapify
+   if current video is not inside, we remove smallest and reheapify
+
 estimate - 1m videos per day = 365m per year = 3.5B for 10 yrs
 = 3.5GB at 1byte per entry, counts will be approx 20 bytes = 80GB so can fit in memory
 
@@ -41,6 +45,16 @@ this way both will update counter and keep counts accurate.
 
 
 top k service will fetch from these servers and merge them (merge k sorted lists) fast and get top videos.
+
+
+this wont work for billions of posts like fb / utube
+
+we use count min sketch - probabilistic ds used for counting frequency in stream - saves a lot of space
+we draw a graph of hash functions to bits in hash value and increment frequency at those bits based on video hash value.
+we can get a upper bound on how many views the video got, lowest value in all hashplaces for that videos
+
+
+
 
    
 9. High Level Design & Flow
