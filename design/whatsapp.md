@@ -44,7 +44,27 @@ user will send a ACK after receiving message, we will remove that entry from tab
 online offline indicator based on ping pong frame of websocket to see which users are online/offline.
 
 basic hld - 
-![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/inside/image.png)
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/inside/whatsppfinal.png)
 
 7. HLD, DataFlow
-8. Deep Dive 
+use L4 load balancer as connection is persisted on both side
+Least Connections
+
+users might be connected to different chat servers, to route, we use pubsub.
+
+for pubsub we can shard based on userId and also have replicas
+
+to save space, we can run a cron job to delete messages periodically.
+
+estimate - 
+1B messages per day  = 1B * 100KB = 1000 m * 0.1KB = 100m mb = 100000 GB = 100TB per day 
+
+
+for multi client users, we have a client table. mapping in chat servers will be based on client id.
+
+
+final img
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/inside/whatsppfinal.png)
+
+
+9. Deep Dive 
