@@ -56,6 +56,7 @@ use redlock to send one ride to a driver at a time only. so a driver is shown on
 
 we show ride to driver for 5-10 seconds and show it to next user. so a ride is shown to one driver at a time only.
 
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/uberFinal.png)
 
 
 7. Optimise and Deepdive - satisfy all NRF.
