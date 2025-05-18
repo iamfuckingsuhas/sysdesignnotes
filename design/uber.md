@@ -8,7 +8,7 @@
         - multiple car types 
 2. Non Functional Requirements - identify the qualities relevant to system, quantify them
     - should be able to match rides in less than a minute
-    - CAP theorem - consistency for matching - ride should be assigned to one driver only, availability for others
+    - CAP theorem - consistency for matching - ride should be assigned to one driver only, shown to one driver at a time only, availability for others
     - handle surges for peak hours like during events / weekends - 100k in a region
     - out of scope -
         - GDPR,
