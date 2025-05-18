@@ -4,8 +4,7 @@ Ad click aggregator
 - we have two phases -
 - one for fast view - stream messages - aggregate - update DB
 - one for accurate realtime / verifying above - log messages to append only - run spark job to validate the count periodically.
-
-
+- realtime/as close as to realtime means stream processing
 
 
 
@@ -37,4 +36,13 @@ we can use OLAP DB - read optimised DB like
 
 final hld - 
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adcounterprima.png)
+
+
+spark wont work as we need as real time as possible, we use streams with flink/spark stream
+
+aggregation window - period in which data is aggregated, count reset after this
+flush intervals - intervals in which intermediary results are flushed from the system.
+
+
+
 
