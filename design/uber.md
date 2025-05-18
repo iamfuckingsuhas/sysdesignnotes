@@ -30,13 +30,22 @@
 5. High Level Design - simple, satisfy all FR
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/basicHldUber.png)
 Location DB calc can be optimised -
+
 estimate on number of api calls -
+
 Simplest - 2D search in postgres - not optimised
+
 GeoHash - redis geohash or ourown - we would be using neighbouring 
+
 Quadtree - in memory tree based
+
 cannot use relational DB as requests are too high, so use redis.
+
 GeoSpatial Index - makes querying faster.
+
 PostGIS uses quadtree - not that optimal as tree needs to be updated everytime driver location changes.
+
 geohash - base32 encoding of the location in geohash bits. redis has approx 64 bit/ 8 bytes per geohash
+
 
 7. Optimise and Deepdive - satisfy all NRF.
