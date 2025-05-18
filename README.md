@@ -12,7 +12,8 @@
 6. basic HLD & Flow
 7. Deep dive - pick 2/3 from NFR and components
 8. Optimisations
-9. Monitoring, Logging and Fault Tolerance
+9. Verify if all FR & NFR is satisfied
+10. Monitoring, Logging and Fault Tolerance
 
 
 
