@@ -37,12 +37,32 @@ we can use OLAP DB - read optimised DB like
 final hld - 
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adcounterprima.png)
 
+kinesis has limit of 1000 per second
+shard kinesis by ad id
+flink is horizontally scalable, can take more jobs/executors
+
+
 
 spark wont work as we need as real time as possible, we use streams with flink/spark stream
 
-aggregation window - period in which data is aggregated, count reset after this
-flush intervals - intervals in which intermediary results are flushed from the system.
+aggregation window - period for which flink collects events, performs aggregation and then send final count. 
+
+flush intervals - after this interval, flink will send partial results. - continuous triggers
 
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adclickaggregatorsecond.png)
 
+hot shard - some ads can get more clicks
+
+partition - celebrity problem - adId : 0-N -> further dividing popular ad id into zero to n shards
+
+flink can be one job per ad id and since its memory based, it can scale.
+
+enable a few day retention policy 
+
+kafka streams - distributed, fault tolerant and highly available
+
+we use a append only DB and a spark job for reconciliation that runs periodically to keep data accurate.
+
+final - 
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adaggregatorfinal.png)
 
