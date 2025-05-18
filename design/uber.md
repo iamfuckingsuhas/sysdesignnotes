@@ -44,6 +44,8 @@ geohash -
 - precision is fixed, dynamic update based on number of business or population cannot happen.
 - meter precision in 8-9 digits
 - boundary issue mitigated by searching near by boxes.
+
+
 quadtree - 
 - hard to use and maintain
 - dynamic grid size based on condition
