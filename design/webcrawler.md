@@ -30,5 +30,7 @@ for webcrawler with continued updatedes, we add a url scheduler that periodicall
 final
 ![final](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/inside/webcrawler_final.png)
 
+we might need a smart shcheduler to keep error rate low as we might keep pciking sites from same domain and hit limiter, randomise the messages.
+
 
 8. Deep Dive
