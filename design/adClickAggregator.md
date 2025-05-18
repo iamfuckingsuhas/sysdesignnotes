@@ -66,3 +66,7 @@ we use a append only DB and a spark job for reconciliation that runs periodicall
 final - 
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adaggregatorfinal.png)
 
+
+to prevent abuses, we can keep a dedupe id like ad impression id.
+each time the ad is shown to the user, we create a unique id, we dedupe on this before pushing to stream.
+we can send a signed / encrypted token and verify it.
