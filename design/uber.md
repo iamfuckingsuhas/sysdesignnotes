@@ -21,7 +21,7 @@
     2. User
     3. Booking
     4. Location
-4. APIs -
+4. APIs - userIds will be taken from token instead of passing from header.
    1. GET /ride/cost -> return cost
    2. POST /ride -> {source, destination} -> to create a booking 
    3. POST /location -> {latitude, longitude} -> for driver to send location
