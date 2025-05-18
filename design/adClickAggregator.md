@@ -26,3 +26,15 @@ Ad click aggregator
     - aggregated data can be queried
 
 clicks could be missed if users use adblocker where click event will be missed, so after click ingestion is done, send redirect url. 
+
+302 for redirect
+
+DB needs a lot of writes so we can use cassandra due to its LSM 
+using just the cassandra doesnt work as querying clicks would take a lot of time
+we need to aggregate the data like condense it so reads are fast
+
+we can use OLAP DB - read optimised DB like 
+
+final hld - 
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/adcounterprima.png)
+
