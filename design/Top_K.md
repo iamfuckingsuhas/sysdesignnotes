@@ -34,7 +34,10 @@ sharded on video-id so all views go to one of the top k worker only. view stream
 if a new shard is added, videos need to me moved. to reduce this, we need to use consistent hashing. zookeeper for easy management of shards.
 
 
+for each time period like 1 hour, 1 day, we keep a sliding window by one consumer reading the latest event and another reading the current-1 hour back lagging events. 
+this way both will update counter and keep counts accurate.
 
+![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/topkdesign.png)
 
 
 top k service will fetch from these servers and merge them (merge k sorted lists) fast and get top videos.
