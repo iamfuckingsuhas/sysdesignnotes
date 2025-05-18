@@ -5,7 +5,7 @@
 ## Steps - 
 
 1. Functional Requirement
-2. Non Functional Requirements - focus on CAP Theorem, Read Write load, latency, load distribution.
+2. Non Functional Requirements - focus on CAP Theorem, Read Write load, latency, load distribution, fault tolerant, GDPR.
 3. Estimates 
 4. Core Entities
 5. APIs
