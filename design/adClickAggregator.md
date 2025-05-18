@@ -3,7 +3,7 @@ Ad click aggregator
 - Lambda architecture
 - we have two phases -
 - one for fast view - stream messages - aggregate - update DB
-- one for accurate realtime / verifying above - log messages to append only - run spark job to validate the count periodically.
+- one for accurate realtime / verifying above - log messages to append only - run spark job to validate the count periodically. - till batch job runs, we are not sure, once run, we are getting correct values.
 - realtime/as close as to realtime means stream processing
 
 
