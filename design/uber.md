@@ -37,18 +37,19 @@ Simplest - 2D search in postgres - not optimised
 
 GeoHash - redis geohash or ourown - we would be using neighbouring 
 
-Quadtree - in memory tree based
+geohash - 
+- native support with redis
+- easy to use and implement
+- updating index is easy 
+- precision is fixed, dynamic update based on number of business or population cannot happen.
+- meter precision in 8-9 digits
+- boundary issue mitigated by searching near by boxes.
+quadtree - 
+- hard to use and maintain
+- dynamic grid size based on condition
+- updating is a little complicated. might require locking for concurrent updated.
+- good for uneven distribution
 
-cannot use relational DB as requests are too high, so use redis.
-
-GeoSpatial Index - makes querying faster.
-
-PostGIS uses quadtree - not that optimal as tree needs to be updated everytime driver location changes.
-
-geohash - base32 encoding of the location in geohash bits. redis has approx 64 bit/ 8 bytes per geohash
-
-geohash - fast updates.
-quadtree - good for uneven distribution, complex updates.
 
 
 7. Optimise and Deepdive - satisfy all NRF.
