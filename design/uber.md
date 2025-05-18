@@ -59,4 +59,7 @@ we show ride to driver for 5-10 seconds and show it to next user. so a ride is s
 ![img](https://github.com/iamfuckingsuhas/sysdesignnotes/blob/main/Assets/uberFinal.png)
 
 
+to handle surges, we can have a ride request queue and send info to users via polling.
+
+
 7. Optimise and Deepdive - satisfy all NRF.
