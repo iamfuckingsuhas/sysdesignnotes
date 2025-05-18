@@ -52,9 +52,9 @@ quadtree -
 - updating is a little complicated. might require locking for concurrent updated.
 - good for uneven distribution
 
-use redlock to send one ride to a driver at a time only.
+use redlock to send one ride to a driver at a time only. so a driver is shown one ride at a time only.
 
-we show ride to driver for 5-10 seconds and show it to next user.
+we show ride to driver for 5-10 seconds and show it to next user. so a ride is shown to one driver at a time only.
 
 
 
