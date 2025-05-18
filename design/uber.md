@@ -47,5 +47,8 @@ PostGIS uses quadtree - not that optimal as tree needs to be updated everytime d
 
 geohash - base32 encoding of the location in geohash bits. redis has approx 64 bit/ 8 bytes per geohash
 
+geohash - fast updates.
+quadtree - good for uneven distribution, complex updates.
+
 
 7. Optimise and Deepdive - satisfy all NRF.
