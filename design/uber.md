@@ -52,6 +52,8 @@ quadtree -
 - updating is a little complicated. might require locking for concurrent updated.
 - good for uneven distribution
 
+we show ride to driver for 5-10 seconds and show it to next user.
+
 
 
 7. Optimise and Deepdive - satisfy all NRF.
