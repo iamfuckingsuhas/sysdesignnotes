@@ -61,5 +61,7 @@ we show ride to driver for 5-10 seconds and show it to next user. so a ride is s
 
 to handle surges, we can have a ride request queue and send info to users via polling.
 
+partition data based on region.
+
 
 7. Optimise and Deepdive - satisfy all NRF.
