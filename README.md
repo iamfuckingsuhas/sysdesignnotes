@@ -9,8 +9,8 @@
 3. Estimates 
 4. Core Entities
 5. APIs
-6. basic HLD
-7. Deep dive
+6. basic HLD & Flow
+7. Deep dive - pick 2/3 from NFR and components
 8. Optimisations
 9. Monitoring, Logging and Fault Tolerance
 
