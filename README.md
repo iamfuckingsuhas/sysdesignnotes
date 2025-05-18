@@ -10,7 +10,7 @@
 4. Core Entities
 5. APIs
 6. basic HLD & Flow
-7. Deep dive - pick 2/3 from NFR and components
+7. Deep dive - pick 2/3 from NFR and components and explain how we scale in all of them.
 8. Optimisations
 9. Verify if all FR & NFR is satisfied
 10. Monitoring, Logging and Fault Tolerance
