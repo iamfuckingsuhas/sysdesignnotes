@@ -148,4 +148,48 @@ Kafka
   
 ---
 
+Cassandra 
+- fast writes(all operations are create only, delete is also soft delete), uses consistent hashing for data & finding replicas.
+- tunable consistency - can set how many ACKs required for read & write, if set to Quorum (n/2+1), guarentee each write is seen by each read.
+- columnar, no fixed schema, each row is just a mapping of column to value
+- uses LSM -> all write append to commit log for durability, all writes made to in memory memTable partitioned by pk. memtabes are periodically flushed to disk as immutable SSTable (sorted string table), uses bloom filter to determine which sstable to be loaded into memory for writing.
+- all nodes can coordinate requests, uses gossip protocol for sharing node info through predefined nodes.
+- in case of failure, hinted handoffs are used and some other node takes the write and when original node is online, its given.
+---
+
+ratelimiter algos - 
+1. token bucket
+2. queue
+3. fixed window counter
+4. sliding window counter
+5. sliding window approx
+rate limiting info sent on response headers.
+---
+snowflake id - some bits for timestamp - some bits for machine id - some bits for sequence - high throughput and chronologically sortable.
+
+url shortener - base62 encoding of snowflakes 
+
+web crawler - frontier queue -> download step -> parse step -> add to frontier queue. use ratelimiter and db for robots.txt
+
+feed system - generate feed for other users for small number of friends, if celeb, generate on the go.
+
+chat system/realtime notifications - websocket vs sse vs long/short polling - use websocket with chat servers - use redis pubsub for message distribution, L4 LB.
+
+search recommendations - trie - keep topK in trie leaf node - async trie updates - data sampelling
+
+youtube - async transcoding - DAG type - scheduler - task - workers - update status - queue
+
+google drive - blocks - checksum - full file hashing - sync by creating new file, SHA 256 fr chunking and AES - 256 for encryption
+
+proximity service - 
+- static - geohash vs quadtree
+- geohash - divide square into two by adding one bit - 6 digits 1km and 1mtr upto 8 
+- quadtree - recursive till condition is met - tree like - in memory
+
+ticket master / uber - redlock for ticket / driver 
+
+---
+
+
+
 
