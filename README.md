@@ -191,5 +191,6 @@ ticket master / uber - redlock for ticket / driver
 ---
 
 
+zookeeper for managing consistent hashing in custom servers.
 
 
